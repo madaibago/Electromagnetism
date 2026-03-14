@@ -1,0 +1,23 @@
+# Git & Github configuration
+
+1. Set author of the commits to track project history
+   git config --global user.name "madaibago"
+   git config --global user.email "madaibago_97@hotmail.com"
+2. Create a new SSH key pair
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+3. Go to GitHub → Settings → SSH and GPG keys → New SSH key,
+   paste that public key, give it a name (like “Laptop”), and save.
+   
+  If there is no authentication for HTTPS pushes:
+  git remote set-url origin git@github.com:madaibago/Electromagnetism.git
+   
+1. Choose a folder and move there.
+2. Create your Python file
+3. git init
+   git add main.py		-> This tells git to track main.py
+   git commit -m "Initial commit"
+4. On Github, create a new empty repo:
+   git remote add origin https://github.com/yourusername/my_python_project.git
+   git branch -M main
+   git push -u origin main
+   
